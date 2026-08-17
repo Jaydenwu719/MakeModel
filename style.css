@@ -7,6 +7,9 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #000;
+}
+
+#Home-page {
   line-height: 1.5;
 }
 
@@ -15,17 +18,50 @@ a {
   color: #000;
 }
 
-a:hover {
+a:hover,
+button:hover {
   color: #ffb22c;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: #fff;
+  outline: none;
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #13fc03;
+  background-image: url("checkmark.png");
+  background-size: 10px 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
 }
 
 button {
   background: none;
+  outline: none;
+  border: none;
 }
 
 .navbar .Create {
   margin-left: auto;
-  border: 2px solid #000;
+  outline: none;
+  border: none;
   font-weight: bold;
   font-size: 18px;
   padding: 5px;
@@ -35,7 +71,7 @@ button {
   border: none;
   padding: 0;
   background: none;
-  margin-left: 0;
+  margin-left: -20px;
 }
 
 .navbar {
@@ -73,4 +109,128 @@ button {
 .Create:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+#Log-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("print.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+.wrapper {
+  width: 50%;
+  min-width: 350px;
+  max-width: 400px;
+
+  height: 50vw;
+  min-height: 400px;
+  max-height: 425px;
+
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 2px solid #ffb22c;
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.wrapper h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+  font-size: 45px;
+  font-weight: 600;
+  color: #000;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.inputs input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  height: 57.5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.inputs input::placeholder {
+  font-size: 16px;
+  opacity: 0.65;
+}
+
+.inputs i {
+  position: absolute;
+  font-size: 35px;
+  right: 15px;
+  top: 35%;
+  transform: translateY(-50%);
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.remember-forgot label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.remember-forgot a:hover {
+  color: #000;
+}
+
+.button {
+  display: flex;
+  max-width: 400px;
+
+  height: 35px;
+
+  justify-content: center;
+  margin-top: 36px;
+  border-radius: 25px;
+  background-color: #fff;
+}
+
+.button button {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.button button:hover {
+  color: #000;
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px 7px 0px;
+}
+
+.register a:hover {
+  color: #000;
+}
+
+.register a {
+  padding-left: 12px;
+  font-weight: 575;
 }
