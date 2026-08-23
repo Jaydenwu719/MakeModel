@@ -21,7 +21,6 @@ a {
 a:hover,
 button:hover {
   color: #ffb22c;
-  text-decoration: underline;
   cursor: pointer;
 }
 
@@ -59,12 +58,15 @@ button {
 }
 
 .navbar .Create {
-  margin-left: auto;
   outline: none;
   border: none;
   font-weight: bold;
   font-size: 18px;
   padding: 5px;
+
+  position: relative;
+  top: 1px;
+  left: 1px;
 }
 
 .Logo {
@@ -72,6 +74,29 @@ button {
   padding: 0;
   background: none;
   margin-left: -20px;
+}
+
+.Login-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  gap: 3px;
+}
+
+.Create,
+.Login-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.navbar-end {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 15px;
 }
 
 .navbar {
@@ -84,15 +109,17 @@ button {
 }
 
 .navbar img {
-  max-height: 73px;
+  max-height: 72px;
   width: auto;
   background-color: #fff;
 }
 
 .navbar ul {
   display: flex;
+  align-items: center;
   flex-direction: row;
   list-style: none;
+  gap: 1.5rem;
   background-size: 100vw;
 }
 
@@ -100,14 +127,16 @@ button {
   padding: 20px 10px;
 }
 
+.navbar ul li a {
+  font-size: 20px;
+}
+
 .navbar a {
   font-size: 24px;
   font-weight: bold;
 }
 
-.navbar a:hover,
-.Create:hover {
-  text-decoration: underline;
+.navbar a:hover {
   cursor: pointer;
 }
 
@@ -196,6 +225,7 @@ button {
 }
 
 .remember-forgot a:hover {
+  text-decoration: underline;
   color: #000;
 }
 
@@ -227,10 +257,46 @@ button {
 }
 
 .register a:hover {
+  text-decoration: underline;
   color: #000;
 }
 
 .register a {
   padding-left: 12px;
   font-weight: 575;
+}
+
+#toggle .hamburger-button {
+  display: none;
+}
+
+#toggle {
+  display: none !important;
+}
+
+@media (max-width: 825px) {
+  .hamburger-button {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .hamburger-button span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 2px;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .Login-button,
+  .Create {
+    display: none;
+  }
 }

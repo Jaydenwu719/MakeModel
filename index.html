@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MakeModel</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
 </head>
 
 <body id="Home-page">
     <nav class="navbar">
-        <button class="Logo"><img src="Logo.png" alt="Logo"></button>
+        <button class="Logo"><img src="Logo.png" alt=""></button>
 
         <div class="container">
             <ul>
@@ -21,7 +24,21 @@
             </ul>
         </div>
 
-        <button class="Create">+ Create</button>
+
+        <div class="navbar-end">
+            <button class="Login-button">
+                <i class="bx bx-user-circle"></i>
+            </button>
+
+            <button class="Create">+ Create</button>
+
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="hamburger-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
     </nav>
 </body>
 <script src="../function.js"></script>
