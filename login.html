@@ -14,7 +14,7 @@
 <body>
 
     <header class="header">
-        <button class="Logo"><img src="Logo.png" alt=""></button>
+        <button class="Logo" type="button"><img src="Logo.png" alt="MakeModel"></button>
     </header>
 
     <nav class="navbar">
@@ -30,11 +30,11 @@
 
 
         <div class="navbar-end">
-            <button class="Login-button">
+            <button class="Login-button" type="button" aria-label="Log in">
                 <i class="bx bx-user-circle"></i>
             </button>
 
-            <button class="Create">+ Create</button>
+            <button class="Create" type="button">+ Create</button>
 
             <input type="checkbox" id="toggle">
             <label for="toggle" class="hamburger-button">
@@ -50,29 +50,31 @@
             <h1>Log In</h1>
 
             <div class="inputs">
-                <input type="text" placeholder="Username">
+                <input type="text" name="username" placeholder="Username" aria-label="Username" autocomplete="username">
                 <i class="bx bx-user"></i>
             </div>
             <div class="inputs">
-                <input type="password" placeholder="Password">
+                <input type="password" name="password" placeholder="Password" aria-label="Password" autocomplete="current-password">
                 <i class="bx bx-lock"></i>
             </div>
 
             <div class="remember-forgot">
-                <label for=""><input type="checkbox" name="" id="">Remember Me</label>
+                <label for="remember-me"><input type="checkbox" name="remember-me" id="remember-me">Remember Me</label>
                 <a href="#Pass-Reset">Forgot Password</a>
             </div>
 
-            <div class="button"><button>Log In</button></div>
+              <div class="button"><button type="button" onclick="window.location.href='index.html'">Log In</button></div>
+
 
             <div class="register">
-                <p>Don't have an Account?</p> <a href="#Register">Register</a>
+                <p>Don't have an Account?</p>  <div class="button"><button type="button" onclick="window.location.href='register.html'">Register</button></div>
+
             </div>
 
 
         </div>
     </div>
+    <script src="function.js"></script>
 </body>
-<script src="function.js"></script>
 
 </html>
