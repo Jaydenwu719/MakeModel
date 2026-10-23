@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: #dc0707;
+  color: #ffb22c;
 
   display: grid;
   grid-template-rows: auto auto 1fr;
@@ -159,7 +159,7 @@ button {
 #Register {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: right;
   min-height: 100vh;
   background-image: url("print.jpg");
   background-size: cover;
