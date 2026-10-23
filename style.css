@@ -158,8 +158,8 @@ button {
 #Log-in,
 #Register {
   display: flex;
-  justify-content: center;
-  align-items: right;
+  justify-content: flex-end;
+  align-items: center;
   min-height: 100vh;
   background-image: url("print.jpg");
   background-size: cover;
