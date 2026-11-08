@@ -51,27 +51,30 @@
             <h1>Register</h1>
 
             <div class="inputs">
-                <input type="text" placeholder="Username">
+                <input id="username" type="text" placeholder="Username">
                 <i class="bx bx-user"></i>
             </div>
             <div class="inputs">
-                <input type="password" placeholder="Password">
+                <input id="password" type="password" placeholder="Password">
                 <i class="bx bx-lock"></i>
             </div>
 
             <div class="inputs">
-                <input type="email" placeholder="Email">
+                <input id="email" type="email" placeholder="Email">
                 <i class="bx bx-envelope"></i>
             </div>
 
 
-            <div class="button"><button type="button" onclick="window.location.href='index.html'">Register</button>
+            <div class="button">
+                <button id="register-btn" type="button" onclick="window.location.href='index.html'">Register</button>
             </div>
 
 
         </div>
     </div>
 </body>
+<!-- To Load the Supabase Library from the web -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="function.js"></script>
 
 </html>

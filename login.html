@@ -53,11 +53,11 @@
             <h1>Log In</h1>
 
             <div class="inputs">
-                <input type="text" name="username" placeholder="Username" aria-label="Username" autocomplete="username">
+                <input id="email" type="text" name="email" placeholder="Email" aria-label="Email" autocomplete="Email">
                 <i class="bx bx-user"></i>
             </div>
             <div class="inputs">
-                <input type="password" name="password" placeholder="Password" aria-label="Password"
+                <input id="password" type="password" name="password" placeholder="Password" aria-label="Password"
                     autocomplete="current-password">
                 <i class="bx bx-lock"></i>
             </div>
@@ -67,7 +67,8 @@
                 <a href="#Pass-Reset">Forgot Password</a>
             </div>
 
-            <div class="button"><button type="button" onclick="window.location.href='index.html'">Log In</button></div>
+            <div class="button">
+                <button id="login-btn" type="button" onclick="window.location.href='index.html'">Log In</button></div>
 
 
             <div class="register">
@@ -80,6 +81,8 @@
 
         </div>
     </div>
+    <!-- To Load the Supabase Library from the web -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="function.js"></script>
 </body>
 
