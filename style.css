@@ -156,6 +156,21 @@ button {
   margin: 0;
 }
 
+.navbar .nav-register .register-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.navbar .nav-register .register-link::after {
+  content: "→";
+  transition: transform 0.2s ease;
+}
+
+.navbar .nav-register .register-link:hover::after {
+  transform: translateX(3px);
+}
+
 .navbar ul li a {
   font-size: 20px;
 }
