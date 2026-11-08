@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const { data, error } = await supabase.auth.signUp({
                 email: email,
                 password: password,
+                username: UserName
             });
 
             if (error) {
